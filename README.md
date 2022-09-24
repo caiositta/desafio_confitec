@@ -9,9 +9,9 @@ A integração com o DynamoDB foi feita da seguinte forma:
 
 
 ![esquema_aws](https://user-images.githubusercontent.com/69823706/192107348-b42ee4ad-515a-4b87-b8cf-afe12dd9a34c.png)
-
 </p>
-<h3 align="center"> Desafio Confitec</h3>
+
+## O Desafio 
 
 :heavy_check_mark: `Parte 1:` Criar uma API REST em Python (FLASK) que consuma a API do Genius 
 (Documentação no link abaixo) que dado um artista liste as 10 músicas mais populares 
