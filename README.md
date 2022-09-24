@@ -30,7 +30,7 @@ Redis
 
 5° Passo - Para interagir com a API não é necessario nenhum Header, basta chamar a API pela URL e passar os parâmetros:
 Exemplo: 
-```http://192.168.0.17:5000/artist/16775```
+```http://0.0.0.0:5000/artist/16775?cache=True```
 
 
 ## O Desafio 
