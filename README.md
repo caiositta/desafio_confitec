@@ -26,6 +26,11 @@ Redis
 3° Passo - Executar o app.py que iniciará a API
 ```python app.py```
 
+4° Passo - Utilizar algum software como o "Postman" para fazer as requisições na API.
+
+5° Passo - Para interagir com a API não é necessario nenhum Header, basta chamar a API pela URL e passar os paramelhos:
+Exemplo: 
+```http://192.168.0.17:5000/artist/16775```
 
 
 ## O Desafio 
