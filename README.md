@@ -7,7 +7,7 @@ Projeto desenvolvido em cima do que foi pedido no desafio.
 
 A integração com o DynamoDB foi feita da seguinte forma:
 
-![esquema_aws](https://user-images.githubusercontent.com/69823706/192107348-b42ee4ad-515a-4b87-b8cf-afe12dd9a34c.png)
+<div align="center"> ![esquema_aws](https://user-images.githubusercontent.com/69823706/192107348-b42ee4ad-515a-4b87-b8cf-afe12dd9a34c.png)</div>
 </p>
 <h3 align="center"> Desafio Confitec</h3>
 
