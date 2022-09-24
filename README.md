@@ -10,7 +10,24 @@ A integração das ferramentas da AWS foi feita da seguinte forma:
 
 ![esquema_aws](https://user-images.githubusercontent.com/69823706/192107348-b42ee4ad-515a-4b87-b8cf-afe12dd9a34c.png)
 </p>
+## Passo a passo para a execução da aplicação
 
+Requisitos: 
+Python
+Redis
+
+1° Passo - Clonar o repositorio em uma pasta de sua preferência.
+```git clone url_repositorio```
+
+2° Passo - Instalar as bibliotecas necessarias para a execução da aplicação.
+```pip install -r requirements.txt```
+
+3° Passo - Executar o app.py que iniciará a API
+```python app.py```
+
+
+
+2 - 
 ## O Desafio 
 
 :heavy_check_mark: `Parte 1:` Criar uma API REST em Python (FLASK) que consuma a API do Genius 
