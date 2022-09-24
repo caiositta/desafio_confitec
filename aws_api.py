@@ -4,13 +4,14 @@ import uuid
 
 
 class AwsApi():
-    def __init__(self, artist_name):
+    def __init__(self, artist_name, cache):
         self.id = uuid.uuid4()
         self.artist = artist_name
+        self.cache = cache
         self.url = 'https://r74hdqbtee.execute-api.sa-east-1.amazonaws.com/the_best_of_them'
 
     def insert_db(self):
-        dados = {"id": str(self.id), "artist": self.artist}
+        dados = {"id": str(self.id), "artist": self.artist, "cache": self.cache}
 
         result = requests.request('POST', self.url, json=dados)
 

@@ -17,7 +17,6 @@ def index(id):
 
     cache = True if request.args.get('cache') in [None, "True"] else False
 
-    # Registra no Cache do Redis
     if redis_cache.exists(id) == 1 and cache == True:
         dict_str = redis_cache.get(str(id)).decode("UTF-8")
         mydata = ast.literal_eval(dict_str)
@@ -29,8 +28,8 @@ def index(id):
         top10 = genius_api.top_ten_songs_of_them()
 
         # Registra no AWS DynamoDB o artista pesquisado
-        aws_api = AwsApi(artist_name)
-        aws_api.insert_db()
+        aws_api = AwsApi(artist_name, cache)
+        print(aws_api.insert_db())
 
         # Registra o resultado no cache do Redis e coloca um tempo de expiração de 7 dias
         redis_cache.set(id, str(top10))
